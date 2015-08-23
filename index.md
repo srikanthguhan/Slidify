@@ -60,7 +60,7 @@ I assure you it's not spam! ;)
 </html>  
 ###  What happens in the back?
 
-For chi-square value of 4 with 1 degree of freedom:
+For chi-square value of 4 with 1 degree of freedom, the following R calculations take place:
 
 ```r
 pchisq(q = 4 , df = 1 , lower.tail = F)
