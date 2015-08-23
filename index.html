@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chi-Square to P-value calculator App</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Chi-Square to P-value calculator App">
+  <meta name="author" content="Srikanth Guhan">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/zenburn.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Chi-Square to P-value calculator App</h1>
+    <h2>Developing Data Products</h2>
+    <p>Srikanth Guhan<br/>Management Student</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>The Present Scenario</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Suppose I ask you to find the p-value to check the significance of a Chi-Square value with given degrees of freedom</p>
+
+<p>Your Standard procedure would be to:  </p>
+
+<ol>
+<li>Open the Chi-Square to p-value table</li>
+<li>Find the value with the given parameters</li>
+<li>Report it</li>
+</ol>
+
+<p>Let&#39;s check this in the next slide, how you would be doing it...  </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>This is how we do it currently...</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p><html>
+<img src="Difficulties.png" alt="Table" width="444" height="585">
+</html></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><em>But what if you wanted the p-value</em>  </p>
+
+<ul>
+<li>with more precision?</li>
+<li>with higher degrees of freedom?</li>
+<li>with chi-square values not in the table?<br></li>
+</ul>
+
+<p>Then comes the use of the awesome App mentioned in this link:  </p>
+
+<p><html>
+<link>
+<a href="https://srikanthguhan.shinyapps.io/Shiny">https://srikanthguhan.shinyapps.io/Shiny</a>
+</link>
+</html>  </p>
+
+<p>Go ahead! Click on it.<br>
+I assure you it&#39;s not spam! ;)</p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>So here&#39;s the general layout of the app</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><html>
+<img src="Look.png" alt="Table" width="511" height="208">
+</html>  </p>
+
+<h3>What happens in the back?</h3>
+
+<p>For chi-square value of 4 with 1 degree of freedom:</p>
+
+<pre><code class="r">pchisq(q = 4 , df = 1 , lower.tail = F)
+</code></pre>
+
+<pre><code>## [1] 0.04550026
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="thank-you-slide segue" id="slide-4">
+		<article class="flexbox vleft auto-fadein">
+    		<h2>Thank you for your time</h2>
+    			<p>Hope you enjoyed it!<br>
+Suggestions and corrections are most welcome  </p>
+
+  		</article>
+</slide>  
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='The Present Scenario'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='This is how we do it currently...'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='So here&#39;s the general layout of the app'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Thank you for your time'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
